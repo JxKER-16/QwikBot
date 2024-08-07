@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    --background-color: #000000;
+}
+
+:root{
+    --text-color: #ffffff;
+    --btn-color: #ffffff;
+    --btn-text-color: #000000;
+    --logo-background-color: #000000;
+    --logo-text-color: #ffffff;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+[data-theme='dark'] {
+    --background-color: #ffffff;
+    --logo-background-color: linear-gradient(to top, #008cff, #e100ff);
+    --btn-color: #000000;
+    --btn-text-color: #ffffff;
+    --project-card-bg: #fff;
+    --text-color: #000000;
+    --logo-text-color: #ffffff;
+    --form-text-color: #fff;
+    --footer-text-color: #bbb;
+  }
+
+@keyframes animate {
+    0%{
+        background-position: 0 0;
+    }
+    /* 25%{
+        background-position: 100% 0;
+    } */
+    50%{
+        background-position: 100% 100%;
+    }
+    /* 75%{
+        background-position: 0 100%;
+    } */
+    0%{
+        background-position: 0 0;
+    }
+}
+
+#hero-title{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #008cff, #e100ff, violet, cyan, rgb(84, 84, 254), blue, #008cff, #e100ff, violet,#008cff, #e100ff, violet, cyan, rgb(84, 84, 254), blue, #008cff, #e100ff, violet);
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+}
+
+#icons{
+    color: var(--text-color);
+}
+
+#icons:hover{
+    background-image: linear-gradient(to bottom, #008cff, #e100ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#icons:active{
+    background-image: linear-gradient(to bottom, #003f72, #660074);
+}
+
+#title{
+    color: var(--text-color);
+}
+
+#user{
+    background: var(--logo-background-color);
+    color: var(--logo-text-color);
+}
+
+#user::after{
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 104%;
+    border-radius: 1000px;
+    background: red;
+    background-image: linear-gradient(to bottom, #008cff, #e100ff);
+    z-index: -1;
+}
+
+#user:hover{
+    z-index: 0;
+    box-shadow: 2px 0 100px #008cff, -2px 0 100px #e100ff;
+}
+
+#hero-content{
+    color: var(--text-color);
+}
+
+#hero-button{
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+}
+
+#login-title{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #008cff, #e100ff, violet, cyan, rgb(84, 84, 254), blue, #008cff, #e100ff, violet,#008cff, #e100ff, violet, cyan, rgb(84, 84, 254), blue, #008cff, #e100ff, violet);
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+}
+    
