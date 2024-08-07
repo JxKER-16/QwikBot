@@ -15,7 +15,7 @@ function Login() {
         <form action="Post" className="bg-white w-1/2 flex justify-center my-20 h-[800px] border-none rounded-md">
                 <a href="/" className="absolute my-10 mr-[48rem] text-1xl font-roboto-mono hover:underline cursor-pointer">← Back</a>
             <div id="login-title" className="py-10 font-rubik">
-                <h1 id="login-title" className="text-[45px]">Login</h1>
+                <h1 id="login-title" className="text-[40px]">Login</h1>
             </div>
             <div className="w-[120px] absolute mt-36">
                     <img src={logo} alt="" className="rounded-[40px]" />
